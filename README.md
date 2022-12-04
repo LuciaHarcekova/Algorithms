@@ -17,14 +17,6 @@ Please feel free to reference and :star: to support this repo, thank you!
 * [Stack](#stack)
 * [Queue](#queue)
 * [Tree](#tree)
-* [Dynamic programming](#dynamic-programming)
-* [Depth-first search](#depth-first-search)
-* [Breadth-first search](#breadth-first-search)
-* [Math](#math)
-* [Search](#search)
-* [Sort](#sort)
-* [Graph](#graph)
-* [Design](#design)
 
 
 ### Array
@@ -32,12 +24,34 @@ Please feel free to reference and :star: to support this repo, thank you!
 | ----- | -------- | ---------- | ---- | ----- |
 [Minimum Average Difference](https://leetcode.com/problems/minimum-average-difference/)|![](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)| Medium| O(n)| O(1)|
 
+
 ### String
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
 [Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/)|![](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)| Easy| O(n)| O(1)|
 [Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)|![](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)| Medium| O(n)| O(n)|
 [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)|![](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)| Medium| O(n)| O(n)|
+
+
+### Linked List
+| Title | Solution | Difficulty | Time | Space |
+| ----- | -------- | ---------- | ---- | ----- |
+
+
+### Stack
+| Title | Solution | Difficulty | Time | Space |
+| ----- | -------- | ---------- | ---- | ----- |
+
+
+### Queue
+| Title | Solution | Difficulty | Time | Space |
+| ----- | -------- | ---------- | ---- | ----- |
+
+
+### Tree
+| Title | Solution | Difficulty | Time | Space |
+| ----- | -------- | ---------- | ---- | ----- |
+
 
 ## Additional Practice 
 [LeetCode Online](https://leetcode.com/) is a website containing many **algorithm questions**. 
