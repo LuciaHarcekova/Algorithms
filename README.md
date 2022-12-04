@@ -30,7 +30,8 @@ Please feel free to reference and :star: to support this repo, thank you!
 ### Array
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
-
+[Minimum Average Difference](https://leetcode.com/problems/minimum-average-difference/)|![](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)| Medium| O(n)| O(1)|
 
 ### String
 | Title | Solution | Difficulty | Time | Space |
