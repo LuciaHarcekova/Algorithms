@@ -31,6 +31,7 @@ Please feel free to reference and :star: to support this repo, thank you!
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
 [Minimum Average Difference](https://leetcode.com/problems/minimum-average-difference/)|![](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)| Medium| O(n)| O(1)|
+[Rotate Image](https://leetcode.com/problems/rotate-image/)|![](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)| Medium| O(n^2)| O(1)|
 
 ### String
 | Title | Solution | Difficulty | Time | Space |
@@ -38,7 +39,6 @@ Please feel free to reference and :star: to support this repo, thank you!
 [Determine if String Halves Are Alike](https://leetcode.com/problems/determine-if-string-halves-are-alike/)|![](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)| Easy| O(n)| O(1)|
 [Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)|![](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)| Medium| O(n)| O(n)|
 [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/)|![](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)| Medium| O(n)| O(n)|
-
 
 
 ### Linked List
