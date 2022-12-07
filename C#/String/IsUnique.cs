@@ -14,7 +14,7 @@ Approaches:
 */
 
 public class Solution {
-    public static bool isUniqueChars(string str) {
+    public static bool IsUniqueChars(string str) {
 
         // String length cannot be more than 256 - ASCII.
         if (str.Length > 128) return false;
