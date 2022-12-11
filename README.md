@@ -28,7 +28,7 @@ Please feel free to reference and :star: to support this repo, thank you!
 | ----- | -------- | ---------- | ---- | ----- |
 [Minimum Average Difference](https://leetcode.com/problems/minimum-average-difference/)|![](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)| Medium| O(n)| O(1)|
 [Rotate Image](https://leetcode.com/problems/rotate-image/)|![](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)| Medium| O(n^2)| O(1)|
-
+[Zero Matrix](https://www.crackingthecodinginterview.com)|![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)| Easy| O(n*m)| O(n+m)|
 
 ### String
 | Title | Solution | Difficulty | Time | Space |
