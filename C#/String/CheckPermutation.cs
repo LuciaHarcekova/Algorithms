@@ -15,14 +15,14 @@ Approaches:
 */
 
 public class Solution {
-    public static bool CheckPermutation(string s, string t){
+    public static bool CheckPermutation(string s, string t) { 
         if (s.Length != t.Length) return false;
     
         int[] letters = new int[128];
     
         foreach (char c in s) letters[c]++;
     
-        foreach (char c in t){
+        foreach (char c in t) {
             letters[c]--;
             if (letters[c] < 0) return false;
         } 

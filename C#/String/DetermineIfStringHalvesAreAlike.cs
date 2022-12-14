@@ -17,8 +17,8 @@ public class Solution {
         int n = s.Length;
         int noVowelsAlike = 0;
 
-        for (int i = 0; i < n; i++){
-            if (vowels.Contains(s[i])){
+        for (int i = 0; i < n; i++) {
+            if (vowels.Contains(s[i])) {
                 if (i < n / 2)
                     noVowelsAlike++;
                 else

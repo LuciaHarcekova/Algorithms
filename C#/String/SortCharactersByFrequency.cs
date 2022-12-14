@@ -16,7 +16,7 @@ public class Solution {
         Dictionary<char, int> dic = new Dictionary<char, int>();
         
         // Get frequencies
-        for(int i=0; i<s.Length; i++){
+        for(int i=0; i<s.Length; i++) {
             if(dic.ContainsKey(s[i]))
                 dic[s[i]] +=1;
             else
