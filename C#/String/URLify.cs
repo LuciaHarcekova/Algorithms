@@ -25,7 +25,7 @@ public class Solution {
 
         // Count spaces in string
         int spaceCount = 0;
-        for (int i = 0; i < trueLength; i++){
+        for (int i = 0; i < trueLength; i++) {
             if (str[i] == ' '){
                 spaceCount++;
             }
@@ -38,7 +38,7 @@ public class Solution {
             // End of array
             str[trueLength] = '\0';
         }
-        for (int i = trueLength - 1; i >= 0; i--){
+        for (int i = trueLength - 1; i >= 0; i--) {
             if (str[i] == ' ') {
                 str[index - 1] = '0';
                 str[index - 2] = '2'; 

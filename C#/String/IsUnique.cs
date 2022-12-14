@@ -23,9 +23,9 @@ public class Solution {
         bool[] occurrences = new bool[128];
 
         // For every character, check if it exists in "occurrences"
-        for (int i=0; i<str.Length; i++){
+        for (int i=0; i<str.Length; i++) {
             int value = str[i];
-            if (occurrences[value]){
+            if (occurrences[value]) {
                 return false;
             }
             occurrences[value] = true;
