@@ -32,6 +32,8 @@ Please feel free to reference and :star: to support this repo, thank you!
 [Zero Matrix](https://www.crackingthecodinginterview.com)|![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)| Easy| O(n*m)| O(n+m)|
 [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)|![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)| Easy| O(n^2)| O(1)|
 [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)| Easy| O(n+m)| O(n+m)|
+[House Robber](https://leetcode.com/problems/house-robber/description/)|![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)| Easy| O(n)| O(1)|
+
 
 ### String
 | Title | Solution | Difficulty | Time | Space |
