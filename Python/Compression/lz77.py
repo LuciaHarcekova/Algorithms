@@ -28,9 +28,40 @@ Sources:
 en.wikipedia.org/wiki/LZ77_and_LZ78
 """
 
+from __future__ import annotations
 
 __version__ = "0.1"
 __author__ = "Lucia Harcekova"
+
+
+class Token:
+    """
+    Dataclass representing triplet called token consisting of length, offset
+    and indicator. This triplet is used during LZ77 compression.
+    """
+
+    def __init__(self, offset: int, length: int, indicator: str) -> None:
+        self.offset = offset
+        self.length = length
+        self.indicator = indicator
+
+    def __repr__(self) -> str:
+        """
+        Tests:
+            >>> token = Token(5, 6, "a")
+            >>> token.__repr__()
+            '(5, 6, a)'
+        """
+        return f"({self.offset}, {self.length}, {self.indicator})"
+
+    def __str__(self) -> str:
+        """
+        Tests:
+            >>> token = Token(5, 6, "a")
+            >>> token.__str__()
+            '(5, 6, a)'
+        """
+        return f"({self.offset}, {self.length}, {self.indicator})"
 
 
 class LZ77Compressor:
@@ -43,21 +74,24 @@ class LZ77Compressor:
         self.lookahead_buffer_size = lookahead_buffer_size
         self.search_buffer_size = self.window_size - self.lookahead_buffer_size
 
-    def compress(self, text: str) -> list:
+    def compress(self, text: str) -> list[Token]:
         """This method compresses given string text using LZ77 compression algorithm.
 
         Args:
-            text (str): string that's going to be compressed
+            text: string that's going to be compressed
 
         Returns:
-            output (list): the compressed text
+            output: the compressed text
+
+        Returns:
+            Compressed text made of triplets (offset, length, indicator).
 
         Tests:
             >>> lz77_compressor = LZ77Compressor(13, 6)
-            >>> lz77_compressor.compress("ababcbababaa")
-            [(0, 0, 'a'), (0, 0, 'b'), (2, 2, 'c'), (4, 3, 'a'), (2, 2, 'a')]
-            >>> lz77_compressor.compress("aacaacabcabaaac")
-            [(0, 0, 'a'), (1, 1, 'c'), (3, 4, 'b'), (3, 3, 'a'), (1, 2, 'c')]
+            >>> str(lz77_compressor.compress("ababcbababaa"))
+            '[(0, 0, a), (0, 0, b), (2, 2, c), (4, 3, a), (2, 2, a)]'
+            >>> str(lz77_compressor.compress("aacaacabcabaaac"))
+            '[(0, 0, a), (1, 1, c), (3, 4, b), (3, 3, a), (1, 2, c)]'
         """
 
         output = []
@@ -68,79 +102,73 @@ class LZ77Compressor:
 
             # find the next encoding phrase
             # - triplet with offset, length, indicator (the next encoding character)
-            (offset, length, indicator) = self._find_encoding_token(text, search_buffer)
+            token = self._find_encoding_token(text, search_buffer)
 
             # update the search buffer:
             # - add new characters from text into it
             # - check if size exceed the max search buffer size, if so, drop the
             #   oldest elements
-            search_buffer += text[: length + 1]
+            search_buffer += text[: token.length + 1]
             if len(search_buffer) > self.search_buffer_size:
                 search_buffer = search_buffer[-self.search_buffer_size :]
 
             # update the text
-            text = text[length + 1 :]
+            text = text[token.length + 1 :]
 
             # append the token to output
-            output.append((offset, length, indicator))
+            output.append(token)
 
         return output
 
-    def decompress(self, tokens: list) -> str:
+    def decompress(self, tokens: list[Token]) -> str:
         """This method turns the list of tokens consisting of triplets of the form
         (offset, length, char), into an output string.
 
         Args:
-            tokens (list): Tokens (offset, length, char)
+            tokens: list containing triplets (offset, length, char)
 
         Returns:
-            output (str): The decompressed text
+            output: decompressed text
 
         Tests:
             >>> lz77_compressor = LZ77Compressor(13, 6)
-            >>> lz77_compressor.decompress([(0, 0, 'c'), (0, 0, 'a'), (0, 0, 'b'), \
-                    (0, 0, 'r'), (3, 1, 'c'), (2, 1, 'd'), (7, 4, 'r'), (3, 5, 'd')])
+            >>> lz77_compressor.decompress([Token(0, 0, 'c'), Token(0, 0, 'a'), \
+                Token(0, 0, 'b'), Token(0, 0, 'r'), Token(3, 1, 'c'), \
+                Token(2, 1, 'd'), Token(7, 4, 'r'), Token(3, 5, 'd')])
             'cabracadabrarrarrad'
-            >>> lz77_compressor.decompress([(0, 0, 'a'), (0, 0, 'b'), (2, 2, 'c'), \
-                    (4, 3, 'a'), (2, 2, 'a')])
+            >>> lz77_compressor.decompress([Token(0, 0, 'a'), Token(0, 0, 'b'), \
+                Token(2, 2, 'c'), Token(4, 3, 'a'), Token(2, 2, 'a')])
             'ababcbababaa'
-            >>> lz77_compressor.decompress([(0, 0, 'a'), (1, 1, 'c'), (3, 4, 'b'), \
-                    (3, 3, 'a'), (1, 2, 'c')])
+            >>> lz77_compressor.decompress([Token(0, 0, 'a'), Token(1, 1, 'c'), \
+                Token(3, 4, 'b'), Token(3, 3, 'a'), Token(1, 2, 'c')])
             'aacaacabcabaaac'
         """
 
         output = ""
 
-        for (offset, length, indicator) in tokens:
-            for _ in range(length):
-                output += output[-offset]
-            output += indicator
+        for token in tokens:
+            for _ in range(token.length):
+                output += output[-token.offset]
+            output += token.indicator
 
         return output
 
-    def _find_encoding_token(self, text: str, search_buffer: str) -> tuple:
+    def _find_encoding_token(self, text: str, search_buffer: str) -> Token:
         """Finds the encoding token for the first character in the text.
-
-        Args:
-            text (str)
-            search_buffer (str)
-
-        Returns:
-            tuple: Token
 
         Tests:
             >>> lz77_compressor = LZ77Compressor(13, 6)
-            >>> lz77_compressor._find_encoding_token("abrarrarrad", "abracad")
-            (7, 4, 'r')
-            >>> lz77_compressor._find_encoding_token("adabrarrarrad", "cabrac")
-            (2, 1, 'd')
+            >>> lz77_compressor._find_encoding_token("abrarrarrad", "abracad").offset
+            7
+            >>> lz77_compressor._find_encoding_token("adabrarrarrad", "cabrac").length
+            1
         """
 
         # Initialise result parameters to default values
         length, offset = 0, 0
 
         if search_buffer == "":
-            return offset, length, text[length]
+            return Token(offset, length, text[length])
 
         for i, character in enumerate(search_buffer):
             found_offset = len(search_buffer) - i
@@ -151,7 +179,7 @@ class LZ77Compressor:
                 if found_length >= length:
                     offset, length = found_offset, found_length
 
-        return offset, length, text[length]
+        return Token(offset, length, text[length])
 
     def _match_length_from_index(
         self, text: str, window: str, text_index: int, window_index: int
@@ -160,13 +188,13 @@ class LZ77Compressor:
         text_index in text and window_index in window.
 
         Args:
-            text (str): _description_
-            window (str): sliding window
-            text_index (int): index of character in text
-            window_index (int): index of character in sliding window
+            text: _description_
+            window: sliding window
+            text_index: index of character in text
+            window_index: index of character in sliding window
 
         Returns:
-            int: The maximum match between text and window, from given indexes.
+            The maximum match between text and window, from given indexes.
 
         Tests:
             >>> lz77_compressor = LZ77Compressor(13, 6)
@@ -191,5 +219,6 @@ if __name__ == "__main__":
     # Example
     TEXT = "cabracadabrarrarrad"
     compressed_text = lz77_compressor.compress(TEXT)
+    print(lz77_compressor.compress("ababcbababaa"))
     decompressed_text = lz77_compressor.decompress(compressed_text)
-    assert decompressed_text == TEXT, "The LZ77 agirithm returned the invalid result."
+    assert decompressed_text == TEXT, "The LZ77 algorithm returned the invalid result."
