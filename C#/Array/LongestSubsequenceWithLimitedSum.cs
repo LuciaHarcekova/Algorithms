@@ -33,10 +33,10 @@ than or equal to 1, so answer[0] = 0.
 public class Solution {
     public int[] AnswerQueries(int[] nums, int[] queries) {
         int n = nums.Length; 
-		int m = queries.Length;
+		    int m = queries.Length;
         int[] result = new int[m];
 
-		Array.Sort(nums);
+		    Array.Sort(nums);
 
         // initialize and fill the helper sums
         // at i position we have sum of numbers from 0 to i-th index
