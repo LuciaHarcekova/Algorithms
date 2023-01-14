@@ -45,7 +45,7 @@ class Solution {
     
     // Source: https://leetcode.com/problems/lexicographically-smallest-equivalent-string/solutions/306768/union-find-solution-java/
 
-    public String smallestEquivalentString(String s1, String s2, String baseStr) {
+    public String smallestEquivalentString(String A, String B, String S) {
         int[] graph = new int[26];
         for(int i = 0; i < 26; i++) {
             graph[i] = i;
