@@ -27,7 +27,6 @@ Explanation: The longest path where each two adjacent nodes have different chara
 the path: 2 -> 0 -> 3. The length of this path is 3, so 3 is returned.
 """
 
-
 class Solution(object):
 
     longest_path = 0
