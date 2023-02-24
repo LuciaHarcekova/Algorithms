@@ -100,6 +100,12 @@ Please feel free to reference and :star: to support this repo, thank you!
 [Find the Difference](https://leetcode.com/problems/find-the-difference/)|![](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)| Easy| O(n+m)| O(1)|
 
 
+### Queue
+| Title | Solution | Difficulty | Time | Space |
+| ----- | -------- | ---------- | ---- | ----- |
+[IPO](https://leetcode.com/problems/ipo/description/)|![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)| Hard| O(n*log(n))| O(n)|
+
+
 ### Stack
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
