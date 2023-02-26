@@ -104,6 +104,7 @@ Please feel free to reference and :star: to support this repo, thank you!
 | Title | Solution | Difficulty | Time | Space |
 | ----- | -------- | ---------- | ---- | ----- |
 [IPO](https://leetcode.com/problems/ipo/description/)|![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)| Hard| O(n*log(n))| O(n)|
+[Minimize Deviation in Array](https://leetcode.com/problems/minimize-deviation-in-array/) |![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)| Hard| O(nlog(n))| O(n)|
 
 
 ### Stack
