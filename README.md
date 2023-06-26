@@ -105,6 +105,7 @@ Please feel free to reference and :star: to support this repo, thank you!
 | ----- | -------- | ---------- | ---- | ----- |
 [IPO](https://leetcode.com/problems/ipo/description/)|![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)| Hard| O(n*log(n))| O(n)|
 [Minimize Deviation in Array](https://leetcode.com/problems/minimize-deviation-in-array/) |![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)  ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)| Hard| O(nlog(n))| O(n)|
+[Total Cost to Hire K Workers](https://leetcode.com/problems/total-cost-to-hire-k-workers/)|![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) | Medium| O((k+2n)*log(2n))| O(log 2n)|
 
 
 ### Stack
