@@ -105,6 +105,7 @@ Please feel free to reference and :star: to support this repo, thank you!
 | ----- | -------- | ---------- | ---- | ----- |
 [Find the Difference](https://leetcode.com/problems/find-the-difference/)|![](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)| Easy| O(n+m)| O(1)|
 [Reverse Bits](https://leetcode.com/problems/reverse-bits/)|![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)| Easy| O(1)| O(1)|
+[Add Binary](https://leetcode.com/problems/add-binary/description/)| ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)| Easy| O(1)| O(1)|
 
 
 ### Queue
