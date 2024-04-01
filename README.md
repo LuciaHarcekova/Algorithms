@@ -201,6 +201,7 @@ Please feel free to reference and :star: to support this repo, thank you!
 [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)|![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)| Medium| O(m*n)| O(m*n)|
 [As Far from Land as Possible](https://leetcode.com/problems/as-far-from-land-as-possible/description/)| ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)| Medium| O(m*n)| O(m*n)|
 [Edit Distance](https://leetcode.com/problems/minimize-deviation-in-array/) |![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white) | Hard| O(mn)| O(n)|
+[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) |![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white) | Medium| O(n)| O(n)|
 
 
 ## Additional Practice 
